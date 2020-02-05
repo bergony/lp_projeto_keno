@@ -1,0 +1,25 @@
+\hypertarget{index_intro_sec}{}\section{Introduction}\label{index_intro_sec}
+{\bfseries Wellcome to \hyperlink{classKenoBet}{Keno\+Bet} Project} Kenobet is a luck game, you have to pick n numbers in range \mbox{[}0,15) and your pick have ~\newline
+ to in the range (1 ,80), place a bet that will be split in n bets rounds, it depends how much hits You get a reward. ~\newline
+ \hypertarget{index_install_sec}{}\section{Run}\label{index_install_sec}
+\hypertarget{index_step1}{}\subsection{Step 1\+: Make ./keno}\label{index_step1}
+g++ -\/\+Wall -\/std=c++11 \hyperlink{main_8cpp}{src/main.\+cpp} \hyperlink{bet_8cpp}{src/bet.\+cpp} -\/I src/ -\/g\hypertarget{index_step2}{}\subsection{Step 2\+: make a bet.\+dat \char`\"{}a bet file\char`\"{}}\label{index_step2}
+vim {\bfseries bet.\+dat} ~\newline
+ 1500 {\bfseries Cash} ~\newline
+ 3 {\bfseries N} {\bfseries rounds} ~\newline
+ 20 15 46 {\bfseries You} {\bfseries bets} {\bfseries on} {\bfseries range} {\bfseries }\mbox{[}0 80) ~\newline
+ \hypertarget{index_step3}{}\subsection{Step 3\+: Run ./keno}\label{index_step3}
+./keno data/bet.\+dat ~\newline
+ Dont forgot the place {\bfseries \char`\"{}\+Bet F\+I\+L\+E\char`\"{}}  \hypertarget{index_step4}{}\subsection{Step 4\+: Game Running}\label{index_step4}
+press {\bfseries Enter} ~\newline
+ to pass rounds~\newline
+ in the end you can continue playe ~\newline
+ press {\bfseries 1} set a new {\bfseries bet} {\bfseries F\+Ile} ~\newline
+\hypertarget{index_step5}{}\subsection{E\+R\+R\+O\+S\+: valgrid issues}\label{index_step5}
+==4332== Invalid read of size 1 ~\newline
+==4332== at 0x4\+C32\+D32\+: \+\_\+\+\_\+strlen\+\_\+sse2 (in /usr/lib/valgrind/vgpreload\+\_\+memcheck-\/amd64-\/linux.so)~\newline
+==4332== by 0x4\+F61\+C93\+: std\+::\+\_\+\+\_\+cxx11\+::basic\+\_\+string$<$char, std\+::char\+\_\+traits$<$char$>$, std\+::allocator$<$char$>$ $>$\+::operator=(char const$\ast$) (in /usr/lib/x86\+\_\+64-\/linux-\/gnu/libstdc++.so.\+6.\+0.\+25) ~\newline
+==4332== by 0x1099\+F3\+: main (\hyperlink{main_8cpp}{main.\+cpp}\+:14)~\newline
+==4332== Address 0x0 is not stack\textquotesingle{}d, malloc\textquotesingle{}d or (recently) free\textquotesingle{}d ~\newline
+Error convert in=argv\mbox{[}i\mbox{]}\hypertarget{index_step6}{}\subsection{E\+R\+R\+O\+S\+: Bet\+File Issues}\label{index_step6}
+The B\+E\+T\+F\+I\+LE must have one white-\/space bet between spots. 

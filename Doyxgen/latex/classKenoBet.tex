@@ -1,0 +1,788 @@
+\hypertarget{classKenoBet}{}\section{Keno\+Bet Class Reference}
+\label{classKenoBet}\index{Keno\+Bet@{Keno\+Bet}}
+
+
+{\ttfamily \#include $<$bet.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classKenoBet_a225e9428e2bc69acfd4fef3effdd4ccc}{Keno\+Bet} (float i=0, float t=0, float s=0, float ts=0, int n=0)
+\begin{DoxyCompactList}\small\item\em ! Constructor Keno bet . \end{DoxyCompactList}\item 
+\hyperlink{classKenoBet_aed0e6361718c05a48c1be8653ffcf2d4}{$\sim$\+Keno\+Bet} (void)
+\begin{DoxyCompactList}\small\item\em ! Destructor Keno Bet \end{DoxyCompactList}\item 
+\hyperlink{classKenoBet_aaabc53c7d5505c3aae1de7b685f72f05}{Keno\+Bet} (const \hyperlink{classKenoBet}{Keno\+Bet} \&clone)
+\begin{DoxyCompactList}\small\item\em ! Copy Keno Bet \end{DoxyCompactList}\item 
+float \hyperlink{classKenoBet_aace00d82c42c9870a4f3b95c7ec79f24}{get\+\_\+\+IC} (void) const
+\begin{DoxyCompactList}\small\item\em Get Inital Cash. \end{DoxyCompactList}\item 
+float \hyperlink{classKenoBet_ade294f6dcb57c7a55be5ce2303664b0a}{get\+\_\+\+TC} (void) const
+\begin{DoxyCompactList}\small\item\em Get Total Cash. \end{DoxyCompactList}\item 
+float \hyperlink{classKenoBet_a0c2ee88fc2f8e7afc5b0399fe74c022b}{get\+\_\+\+SC} (void) const
+\begin{DoxyCompactList}\small\item\em Get Spend Cash per Round. \end{DoxyCompactList}\item 
+float \hyperlink{classKenoBet_a15782d60d2e9b76f359963865a714a04}{get\+\_\+\+T\+SC} (void) const
+\begin{DoxyCompactList}\small\item\em Get Total Inital Cash. \end{DoxyCompactList}\item 
+int \hyperlink{classKenoBet_a79f26e472d9a60894e25094a37d06eb6}{get\+\_\+spot\+\_\+r} (void)
+\begin{DoxyCompactList}\small\item\em Get Valor of Hits Right. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{classKenoBet_a386ab5f7108fd2df3518f37bfca2b2ef}{get\+\_\+m\+\_\+spots} (void)
+\begin{DoxyCompactList}\small\item\em Get Pointer of begin vector(spots) \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{classKenoBet_a8106aa1f149ba3043a8219453e1af3a1}{get\+\_\+m\+\_\+spots\+\_\+rdn} (void)
+\begin{DoxyCompactList}\small\item\em Get Pointer of begin vector(spots\+\_\+rdn) \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{classKenoBet_a1a124437ed672df3e4e7d195d9716540}{get\+\_\+m\+\_\+spots\+\_\+r} (void)
+\begin{DoxyCompactList}\small\item\em Get Pointer of begin vector(spots\+\_\+r) \end{DoxyCompactList}\item 
+void \hyperlink{classKenoBet_a7b74641d226e6b2ea45bc60889f32781}{set\+\_\+\+IC} (const float \&n\+\_\+\+IC)
+\begin{DoxyCompactList}\small\item\em !\+Set Inital Cash. \end{DoxyCompactList}\item 
+void \hyperlink{classKenoBet_aa9be1ef95a09fcc293e7c73e763ff176}{set\+\_\+\+TC} (const float \&n\+\_\+\+TC)
+\begin{DoxyCompactList}\small\item\em !\+Set Total Cash \end{DoxyCompactList}\item 
+void \hyperlink{classKenoBet_a4865fd866acc1500bde749d8d15ddf16}{set\+\_\+\+SC} (const float \&n\+\_\+\+SC)
+\begin{DoxyCompactList}\small\item\em !\+Set Spend Cash per round. \end{DoxyCompactList}\item 
+void \hyperlink{classKenoBet_abd6b6b0b0ed9c3d030a71673dc89f39a}{set\+\_\+\+T\+SC} (const float \&n\+\_\+\+T\+SC)
+\begin{DoxyCompactList}\small\item\em !set Total Spend Cash. \end{DoxyCompactList}\item 
+void \hyperlink{classKenoBet_a63780c5d19157760a2760407cd68149f}{set\+\_\+\+NR} (const int \&n\+\_\+\+NR)
+\begin{DoxyCompactList}\small\item\em !\+Set Numbers Rounds. \end{DoxyCompactList}\item 
+void \hyperlink{classKenoBet_acdeff501accf00661e0151901bc888c0}{set\+\_\+spot\+\_\+h} (int n\+\_\+spot\+\_\+r)
+\begin{DoxyCompactList}\small\item\em !\+Set valor of hits right. \end{DoxyCompactList}\item 
+bool \hyperlink{classKenoBet_aba848a50d30a0155459eb9f5cbb91966}{add\+\_\+number} (int spot\+\_\+)
+\begin{DoxyCompactList}\small\item\em Adds a number to the spots only if the number is not already there. \end{DoxyCompactList}\item 
+bool \hyperlink{classKenoBet_a2b21e387cde33818230d9895845b2d9a}{set\+\_\+wage} (float wage\+\_\+)
+\begin{DoxyCompactList}\small\item\em Sets the amount of money the player is betting. \end{DoxyCompactList}\item 
+void \hyperlink{classKenoBet_acc2afd4d502e44fdfbb122f3389bc633}{reset} (void)
+\begin{DoxyCompactList}\small\item\em ! Resets a bet to an empty state. \end{DoxyCompactList}\item 
+float \hyperlink{classKenoBet_a65f0348e49dd8a2e2dddfcc9a1f05a65}{get\+\_\+wage} (void) const
+\begin{DoxyCompactList}\small\item\em Retrieves the player ’s wage on this bet . \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classKenoBet_aa6f65b35514270c2707e60b9dea23ae9}{size} (void) const
+\begin{DoxyCompactList}\small\item\em Returns to the current number of spots in the player ’s bet. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \hyperlink{classKenoBet_a382454c66974466900d168c398699483}{get\+\_\+spots} (void) const
+\begin{DoxyCompactList}\small\item\em Return a vector $<$ spot\+\_\+type $>$ with the spots the player has picked so far. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \hyperlink{classKenoBet_a612b57c35203a41682269cdfbb31c2b1}{get\+\_\+hits} (const std\+::vector$<$ int $>$ \&hits\+\_\+)
+\begin{DoxyCompactList}\small\item\em Determine how many spots match the hits passed as argument . \end{DoxyCompactList}\item 
+void \hyperlink{classKenoBet_aa2093fa2b053cf74e95d1e6b54d748f3}{hits\+\_\+rdn} (void)
+\begin{DoxyCompactList}\small\item\em Randon Hits. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classKenoBet_a5a544a0c1ba5872076e7bfdf8f935368}{operator\mbox{[}$\,$\mbox{]}} (int n)
+\begin{DoxyCompactList}\small\item\em operator\mbox{[}\mbox{]} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classKenoBet_a225e9428e2bc69acfd4fef3effdd4ccc}\label{classKenoBet_a225e9428e2bc69acfd4fef3effdd4ccc}} 
+\index{Keno\+Bet@{Keno\+Bet}!Keno\+Bet@{Keno\+Bet}}
+\index{Keno\+Bet@{Keno\+Bet}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{Keno\+Bet()}{KenoBet()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Keno\+Bet\+::\+Keno\+Bet (\begin{DoxyParamCaption}\item[{float}]{i = {\ttfamily 0},  }\item[{float}]{t = {\ttfamily 0},  }\item[{float}]{s = {\ttfamily 0},  }\item[{float}]{ts = {\ttfamily 0},  }\item[{int}]{n = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+! Constructor Keno bet . 
+
+
+\begin{DoxyCode}
+15             :    m\_IC\{ i \}, m\_TC\{ t \}, m\_SC\{ s \}, m\_TSC\{ ts \}, m\_NR\{ n \}
+16         \{
+17             \textcolor{comment}{/* empty */}
+18         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classKenoBet_aed0e6361718c05a48c1be8653ffcf2d4}\label{classKenoBet_aed0e6361718c05a48c1be8653ffcf2d4}} 
+\index{Keno\+Bet@{Keno\+Bet}!````~Keno\+Bet@{$\sim$\+Keno\+Bet}}
+\index{````~Keno\+Bet@{$\sim$\+Keno\+Bet}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{$\sim$\+Keno\+Bet()}{~KenoBet()}}
+{\footnotesize\ttfamily Keno\+Bet\+::$\sim$\+Keno\+Bet (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+! Destructor Keno Bet 
+
+
+\begin{DoxyCode}
+21         \{
+22             \textcolor{comment}{/* empty */}
+23         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classKenoBet_aaabc53c7d5505c3aae1de7b685f72f05}\label{classKenoBet_aaabc53c7d5505c3aae1de7b685f72f05}} 
+\index{Keno\+Bet@{Keno\+Bet}!Keno\+Bet@{Keno\+Bet}}
+\index{Keno\+Bet@{Keno\+Bet}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{Keno\+Bet()}{KenoBet()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Keno\+Bet\+::\+Keno\+Bet (\begin{DoxyParamCaption}\item[{const \hyperlink{classKenoBet}{Keno\+Bet} \&}]{clone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+! Copy Keno Bet 
+
+
+\begin{DoxyCode}
+26         \{
+27             m\_IC = clone.m\_IC;
+28             m\_TC = clone.m\_TC;
+29             m\_SC = clone.m\_SC;
+30             m\_NR = clone.m\_NR;
+31             m\_spots = clone.m\_spots;
+32         \}
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classKenoBet_aaabc53c7d5505c3aae1de7b685f72f05_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classKenoBet_aba848a50d30a0155459eb9f5cbb91966}\label{classKenoBet_aba848a50d30a0155459eb9f5cbb91966}} 
+\index{Keno\+Bet@{Keno\+Bet}!add\+\_\+number@{add\+\_\+number}}
+\index{add\+\_\+number@{add\+\_\+number}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{add\+\_\+number()}{add\_number()}}
+{\footnotesize\ttfamily bool Keno\+Bet\+::add\+\_\+number (\begin{DoxyParamCaption}\item[{int}]{spot\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Adds a number to the spots only if the number is not already there. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spot\+\_\+} & The number we wish to include in the bet . \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if number chosen is successfully inserted ; False otherwise. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+160 \{
+161     \textcolor{keywordtype}{int} index\{0\};
+162     \textcolor{keywordflow}{while}( m\_spots.begin() + index != m\_spots.end() )
+163     \{
+164         \textcolor{keywordflow}{if}( spot\_ == *(m\_spots.begin()+index) )
+165         \{
+166             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+167         \}
+168         index++;
+169     \}
+170     m\_spots.push\_back(spot\_);
+171     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+172 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classKenoBet_aba848a50d30a0155459eb9f5cbb91966_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_a612b57c35203a41682269cdfbb31c2b1}\label{classKenoBet_a612b57c35203a41682269cdfbb31c2b1}} 
+\index{Keno\+Bet@{Keno\+Bet}!get\+\_\+hits@{get\+\_\+hits}}
+\index{get\+\_\+hits@{get\+\_\+hits}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{get\+\_\+hits()}{get\_hits()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Keno\+Bet\+::get\+\_\+hits (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{hits\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Determine how many spots match the hits passed as argument . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hits\+\_\+} & List of hits randomly chosen by the computer . \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An vector with the list of hits . 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+197 \{
+198     srand(time(NULL));
+199     \textcolor{keywordtype}{int} index\{0\};
+200     \textcolor{keywordtype}{bool} repeat\{\textcolor{keyword}{false}\};
+201 
+202     \textcolor{keyword}{auto} save\_rand = rand() % 80+1;
+203     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i\{0\};i < 20; )
+204     \{
+205         save\_rand = rand() % 80+1;
+206         index = 0;
+207         repeat = \textcolor{keyword}{false};
+208 
+209         \textcolor{keywordflow}{while}(m\_spots\_rdn.begin()+index != m\_spots\_rdn.end() )
+210         \{
+211             \textcolor{keywordflow}{if}(save\_rand == *(m\_spots\_rdn.begin()+index))
+212                 repeat = \textcolor{keyword}{true};
+213             index++;
+214         \}
+215         \textcolor{keywordflow}{if}(repeat == \textcolor{keyword}{false})
+216         \{
+217             m\_spots\_rdn.push\_back( save\_rand );
+218             i++;
+219         \}
+220     \}
+221     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i\{0\};i < m\_NR; i++)
+222     \{
+223         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j\{0\}; j < 20; j++)
+224         \{
+225             \textcolor{keywordflow}{if}(*(m\_spots.begin()+i) == *(m\_spots\_rdn.begin()+j))
+226                 m\_spots\_r.push\_back( *(m\_spots.begin()+i) );
+227         \}
+228     \}
+229     \textcolor{keywordflow}{return} m\_spots\_r;
+230 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classKenoBet_a612b57c35203a41682269cdfbb31c2b1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_aace00d82c42c9870a4f3b95c7ec79f24}\label{classKenoBet_aace00d82c42c9870a4f3b95c7ec79f24}} 
+\index{Keno\+Bet@{Keno\+Bet}!get\+\_\+\+IC@{get\+\_\+\+IC}}
+\index{get\+\_\+\+IC@{get\+\_\+\+IC}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{get\+\_\+\+I\+C()}{get\_IC()}}
+{\footnotesize\ttfamily float Keno\+Bet\+::get\+\_\+\+IC (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get Inital Cash. 
+
+\begin{DoxyReturn}{Returns}
+Valor of Inital Cash. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+111 \{
+112     \textcolor{keywordflow}{return} m\_IC;
+113 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classKenoBet_aace00d82c42c9870a4f3b95c7ec79f24_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_a386ab5f7108fd2df3518f37bfca2b2ef}\label{classKenoBet_a386ab5f7108fd2df3518f37bfca2b2ef}} 
+\index{Keno\+Bet@{Keno\+Bet}!get\+\_\+m\+\_\+spots@{get\+\_\+m\+\_\+spots}}
+\index{get\+\_\+m\+\_\+spots@{get\+\_\+m\+\_\+spots}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{get\+\_\+m\+\_\+spots()}{get\_m\_spots()}}
+{\footnotesize\ttfamily int $\ast$ Keno\+Bet\+::get\+\_\+m\+\_\+spots (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get Pointer of begin vector(spots) 
+
+\begin{DoxyReturn}{Returns}
+Pointer to begin of vector. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+188 \{
+189     \textcolor{keywordflow}{return} &(*m\_spots.begin());
+190 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classKenoBet_a386ab5f7108fd2df3518f37bfca2b2ef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_a1a124437ed672df3e4e7d195d9716540}\label{classKenoBet_a1a124437ed672df3e4e7d195d9716540}} 
+\index{Keno\+Bet@{Keno\+Bet}!get\+\_\+m\+\_\+spots\+\_\+r@{get\+\_\+m\+\_\+spots\+\_\+r}}
+\index{get\+\_\+m\+\_\+spots\+\_\+r@{get\+\_\+m\+\_\+spots\+\_\+r}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{get\+\_\+m\+\_\+spots\+\_\+r()}{get\_m\_spots\_r()}}
+{\footnotesize\ttfamily int $\ast$ Keno\+Bet\+::get\+\_\+m\+\_\+spots\+\_\+r (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get Pointer of begin vector(spots\+\_\+r) 
+
+\begin{DoxyReturn}{Returns}
+Pointer to begin of vector. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+192 \{
+193     \textcolor{keywordflow}{return} &(*m\_spots\_r.begin());
+194 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classKenoBet_a1a124437ed672df3e4e7d195d9716540_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_a8106aa1f149ba3043a8219453e1af3a1}\label{classKenoBet_a8106aa1f149ba3043a8219453e1af3a1}} 
+\index{Keno\+Bet@{Keno\+Bet}!get\+\_\+m\+\_\+spots\+\_\+rdn@{get\+\_\+m\+\_\+spots\+\_\+rdn}}
+\index{get\+\_\+m\+\_\+spots\+\_\+rdn@{get\+\_\+m\+\_\+spots\+\_\+rdn}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{get\+\_\+m\+\_\+spots\+\_\+rdn()}{get\_m\_spots\_rdn()}}
+{\footnotesize\ttfamily int $\ast$ Keno\+Bet\+::get\+\_\+m\+\_\+spots\+\_\+rdn (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get Pointer of begin vector(spots\+\_\+rdn) 
+
+\begin{DoxyReturn}{Returns}
+Pointer to begin of vector. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+184 \{
+185     \textcolor{keywordflow}{return} &(*m\_spots\_rdn.begin());
+186 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classKenoBet_a8106aa1f149ba3043a8219453e1af3a1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_a0c2ee88fc2f8e7afc5b0399fe74c022b}\label{classKenoBet_a0c2ee88fc2f8e7afc5b0399fe74c022b}} 
+\index{Keno\+Bet@{Keno\+Bet}!get\+\_\+\+SC@{get\+\_\+\+SC}}
+\index{get\+\_\+\+SC@{get\+\_\+\+SC}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{get\+\_\+\+S\+C()}{get\_SC()}}
+{\footnotesize\ttfamily float Keno\+Bet\+::get\+\_\+\+SC (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get Spend Cash per Round. 
+
+\begin{DoxyReturn}{Returns}
+Valor of Spend Cash per round. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+119 \{
+120     \textcolor{keywordflow}{return} m\_SC;
+121 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{classKenoBet_a0c2ee88fc2f8e7afc5b0399fe74c022b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_a79f26e472d9a60894e25094a37d06eb6}\label{classKenoBet_a79f26e472d9a60894e25094a37d06eb6}} 
+\index{Keno\+Bet@{Keno\+Bet}!get\+\_\+spot\+\_\+r@{get\+\_\+spot\+\_\+r}}
+\index{get\+\_\+spot\+\_\+r@{get\+\_\+spot\+\_\+r}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{get\+\_\+spot\+\_\+r()}{get\_spot\_r()}}
+{\footnotesize\ttfamily int Keno\+Bet\+::get\+\_\+spot\+\_\+r (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get Valor of Hits Right. 
+
+\begin{DoxyReturn}{Returns}
+Valor of Hits Right. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+236 \{
+237     \textcolor{keywordtype}{int} index\{0\};
+238     \textcolor{keywordflow}{while}(m\_spots\_r.begin()+index != m\_spots\_r.end() )
+239     \{
+240         index++;
+241     \}
+242     \textcolor{keywordflow}{return} index;
+243 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classKenoBet_a79f26e472d9a60894e25094a37d06eb6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_a382454c66974466900d168c398699483}\label{classKenoBet_a382454c66974466900d168c398699483}} 
+\index{Keno\+Bet@{Keno\+Bet}!get\+\_\+spots@{get\+\_\+spots}}
+\index{get\+\_\+spots@{get\+\_\+spots}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{get\+\_\+spots()}{get\_spots()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Keno\+Bet\+::get\+\_\+spots (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Return a vector $<$ spot\+\_\+type $>$ with the spots the player has picked so far. 
+
+\begin{DoxyReturn}{Returns}
+The vector $<$ spot\+\_\+type $>$ with the player ’s spots picked so far. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+232 \{
+233     \textcolor{keywordflow}{return} m\_spots;
+234 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{classKenoBet_a382454c66974466900d168c398699483_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_ade294f6dcb57c7a55be5ce2303664b0a}\label{classKenoBet_ade294f6dcb57c7a55be5ce2303664b0a}} 
+\index{Keno\+Bet@{Keno\+Bet}!get\+\_\+\+TC@{get\+\_\+\+TC}}
+\index{get\+\_\+\+TC@{get\+\_\+\+TC}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{get\+\_\+\+T\+C()}{get\_TC()}}
+{\footnotesize\ttfamily float Keno\+Bet\+::get\+\_\+\+TC (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get Total Cash. 
+
+\begin{DoxyReturn}{Returns}
+Valor of Total Cash. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+115 \{
+116     \textcolor{keywordflow}{return} m\_TC;
+117 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classKenoBet_ade294f6dcb57c7a55be5ce2303664b0a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_a15782d60d2e9b76f359963865a714a04}\label{classKenoBet_a15782d60d2e9b76f359963865a714a04}} 
+\index{Keno\+Bet@{Keno\+Bet}!get\+\_\+\+T\+SC@{get\+\_\+\+T\+SC}}
+\index{get\+\_\+\+T\+SC@{get\+\_\+\+T\+SC}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{get\+\_\+\+T\+S\+C()}{get\_TSC()}}
+{\footnotesize\ttfamily float Keno\+Bet\+::get\+\_\+\+T\+SC (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get Total Inital Cash. 
+
+\begin{DoxyReturn}{Returns}
+Valor of Total Inital Cash. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+123 \{
+124     \textcolor{keywordflow}{return} m\_TSC;
+125 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{classKenoBet_a15782d60d2e9b76f359963865a714a04_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_a65f0348e49dd8a2e2dddfcc9a1f05a65}\label{classKenoBet_a65f0348e49dd8a2e2dddfcc9a1f05a65}} 
+\index{Keno\+Bet@{Keno\+Bet}!get\+\_\+wage@{get\+\_\+wage}}
+\index{get\+\_\+wage@{get\+\_\+wage}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{get\+\_\+wage()}{get\_wage()}}
+{\footnotesize\ttfamily float Keno\+Bet\+::get\+\_\+wage (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the player ’s wage on this bet . 
+
+\begin{DoxyReturn}{Returns}
+The wage value . 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classKenoBet_a65f0348e49dd8a2e2dddfcc9a1f05a65_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_aa2093fa2b053cf74e95d1e6b54d748f3}\label{classKenoBet_aa2093fa2b053cf74e95d1e6b54d748f3}} 
+\index{Keno\+Bet@{Keno\+Bet}!hits\+\_\+rdn@{hits\+\_\+rdn}}
+\index{hits\+\_\+rdn@{hits\+\_\+rdn}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{hits\+\_\+rdn()}{hits\_rdn()}}
+{\footnotesize\ttfamily void Keno\+Bet\+::hits\+\_\+rdn (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Randon Hits. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classKenoBet_aa2093fa2b053cf74e95d1e6b54d748f3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_a5a544a0c1ba5872076e7bfdf8f935368}\label{classKenoBet_a5a544a0c1ba5872076e7bfdf8f935368}} 
+\index{Keno\+Bet@{Keno\+Bet}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily unsigned int Keno\+Bet\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+operator\mbox{[}\mbox{]} 
+
+/param n Index of Vector /return valor of vector 
+\begin{DoxyCode}
+132         \{
+133             \textcolor{keywordflow}{if}(n < 0 || n >= 15)
+134             \{
+135                 std::cout << \textcolor{stringliteral}{"\(\backslash\)nIndice excede o valor maximo"};
+136                 exit(1);
+137             \}
+138             \textcolor{keywordflow}{return} *(m\_spots.begin()+n);
+139         \}
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classKenoBet_a5a544a0c1ba5872076e7bfdf8f935368_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_acc2afd4d502e44fdfbb122f3389bc633}\label{classKenoBet_acc2afd4d502e44fdfbb122f3389bc633}} 
+\index{Keno\+Bet@{Keno\+Bet}!reset@{reset}}
+\index{reset@{reset}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Keno\+Bet\+::reset (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+! Resets a bet to an empty state. 
+
+
+\begin{DoxyCode}
+174 \{   
+175     \textcolor{keywordflow}{while}( m\_spots\_r.begin() != m\_spots\_r.end() )
+176         m\_spots\_r.pop\_back();
+177     \textcolor{keywordflow}{while}( m\_spots.begin() != m\_spots.end() )
+178         m\_spots.pop\_back();
+179     \textcolor{keywordflow}{while}( m\_spots\_rdn.begin() != m\_spots\_rdn.end() )
+180         m\_spots\_rdn.pop\_back();
+181     m\_spots\_h = 0;
+182 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{classKenoBet_acc2afd4d502e44fdfbb122f3389bc633_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_a7b74641d226e6b2ea45bc60889f32781}\label{classKenoBet_a7b74641d226e6b2ea45bc60889f32781}} 
+\index{Keno\+Bet@{Keno\+Bet}!set\+\_\+\+IC@{set\+\_\+\+IC}}
+\index{set\+\_\+\+IC@{set\+\_\+\+IC}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{set\+\_\+\+I\+C()}{set\_IC()}}
+{\footnotesize\ttfamily void Keno\+Bet\+::set\+\_\+\+IC (\begin{DoxyParamCaption}\item[{const float \&}]{n\+\_\+\+IC }\end{DoxyParamCaption})}
+
+
+
+!\+Set Inital Cash. 
+
+
+\begin{DoxyCode}
+131 \{
+132     m\_IC = n\_IC;
+133 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classKenoBet_a7b74641d226e6b2ea45bc60889f32781_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_a63780c5d19157760a2760407cd68149f}\label{classKenoBet_a63780c5d19157760a2760407cd68149f}} 
+\index{Keno\+Bet@{Keno\+Bet}!set\+\_\+\+NR@{set\+\_\+\+NR}}
+\index{set\+\_\+\+NR@{set\+\_\+\+NR}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{set\+\_\+\+N\+R()}{set\_NR()}}
+{\footnotesize\ttfamily void Keno\+Bet\+::set\+\_\+\+NR (\begin{DoxyParamCaption}\item[{const int \&}]{n\+\_\+\+NR }\end{DoxyParamCaption})}
+
+
+
+!\+Set Numbers Rounds. 
+
+
+\begin{DoxyCode}
+147 \{
+148     m\_NR = n\_NR;
+149 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classKenoBet_a63780c5d19157760a2760407cd68149f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_a4865fd866acc1500bde749d8d15ddf16}\label{classKenoBet_a4865fd866acc1500bde749d8d15ddf16}} 
+\index{Keno\+Bet@{Keno\+Bet}!set\+\_\+\+SC@{set\+\_\+\+SC}}
+\index{set\+\_\+\+SC@{set\+\_\+\+SC}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{set\+\_\+\+S\+C()}{set\_SC()}}
+{\footnotesize\ttfamily void Keno\+Bet\+::set\+\_\+\+SC (\begin{DoxyParamCaption}\item[{const float \&}]{n\+\_\+\+SC }\end{DoxyParamCaption})}
+
+
+
+!\+Set Spend Cash per round. 
+
+
+\begin{DoxyCode}
+139 \{
+140     m\_SC = n\_SC;
+141 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{classKenoBet_a4865fd866acc1500bde749d8d15ddf16_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_acdeff501accf00661e0151901bc888c0}\label{classKenoBet_acdeff501accf00661e0151901bc888c0}} 
+\index{Keno\+Bet@{Keno\+Bet}!set\+\_\+spot\+\_\+h@{set\+\_\+spot\+\_\+h}}
+\index{set\+\_\+spot\+\_\+h@{set\+\_\+spot\+\_\+h}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{set\+\_\+spot\+\_\+h()}{set\_spot\_h()}}
+{\footnotesize\ttfamily void Keno\+Bet\+::set\+\_\+spot\+\_\+h (\begin{DoxyParamCaption}\item[{int}]{n\+\_\+spot\+\_\+r }\end{DoxyParamCaption})}
+
+
+
+!\+Set valor of hits right. 
+
+
+\begin{DoxyCode}
+151 \{
+152     m\_spots\_h = n\_spot\_r; 
+153 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classKenoBet_acdeff501accf00661e0151901bc888c0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_aa9be1ef95a09fcc293e7c73e763ff176}\label{classKenoBet_aa9be1ef95a09fcc293e7c73e763ff176}} 
+\index{Keno\+Bet@{Keno\+Bet}!set\+\_\+\+TC@{set\+\_\+\+TC}}
+\index{set\+\_\+\+TC@{set\+\_\+\+TC}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{set\+\_\+\+T\+C()}{set\_TC()}}
+{\footnotesize\ttfamily void Keno\+Bet\+::set\+\_\+\+TC (\begin{DoxyParamCaption}\item[{const float \&}]{n\+\_\+\+TC }\end{DoxyParamCaption})}
+
+
+
+!\+Set Total Cash 
+
+
+\begin{DoxyCode}
+135 \{
+136     m\_TC = n\_TC;
+137 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classKenoBet_aa9be1ef95a09fcc293e7c73e763ff176_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_abd6b6b0b0ed9c3d030a71673dc89f39a}\label{classKenoBet_abd6b6b0b0ed9c3d030a71673dc89f39a}} 
+\index{Keno\+Bet@{Keno\+Bet}!set\+\_\+\+T\+SC@{set\+\_\+\+T\+SC}}
+\index{set\+\_\+\+T\+SC@{set\+\_\+\+T\+SC}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{set\+\_\+\+T\+S\+C()}{set\_TSC()}}
+{\footnotesize\ttfamily void Keno\+Bet\+::set\+\_\+\+T\+SC (\begin{DoxyParamCaption}\item[{const float \&}]{n\+\_\+\+T\+SC }\end{DoxyParamCaption})}
+
+
+
+!set Total Spend Cash. 
+
+
+\begin{DoxyCode}
+143 \{
+144     m\_TSC = n\_TSC;
+145 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{classKenoBet_abd6b6b0b0ed9c3d030a71673dc89f39a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_a2b21e387cde33818230d9895845b2d9a}\label{classKenoBet_a2b21e387cde33818230d9895845b2d9a}} 
+\index{Keno\+Bet@{Keno\+Bet}!set\+\_\+wage@{set\+\_\+wage}}
+\index{set\+\_\+wage@{set\+\_\+wage}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{set\+\_\+wage()}{set\_wage()}}
+{\footnotesize\ttfamily bool Keno\+Bet\+::set\+\_\+wage (\begin{DoxyParamCaption}\item[{float}]{wage\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Sets the amount of money the player is betting. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wage\+\_\+} & The wage . \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if we have a wage above zero ; false otherwise. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+155 \{
+156     \textcolor{keywordflow}{return} m\_IC < 0;
+157 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classKenoBet_a2b21e387cde33818230d9895845b2d9a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classKenoBet_aa6f65b35514270c2707e60b9dea23ae9}\label{classKenoBet_aa6f65b35514270c2707e60b9dea23ae9}} 
+\index{Keno\+Bet@{Keno\+Bet}!size@{size}}
+\index{size@{size}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size\+\_\+t Keno\+Bet\+::size (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns to the current number of spots in the player ’s bet. 
+
+\begin{DoxyReturn}{Returns}
+Number of spots present in the bet. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+127 \{
+128     \textcolor{keywordflow}{return} m\_NR;
+129 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classKenoBet_aa6f65b35514270c2707e60b9dea23ae9_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/bergony/lp\+\_\+projeto\+\_\+keno/include/\hyperlink{bet_8h}{bet.\+h}\item 
+/home/bergony/lp\+\_\+projeto\+\_\+keno/src/\hyperlink{bet_8cpp}{bet.\+cpp}\end{DoxyCompactItemize}

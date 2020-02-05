@@ -1,0 +1,246 @@
+\hypertarget{bet_8cpp}{}\section{/home/bergony/lp\+\_\+projeto\+\_\+keno/src/bet.cpp File Reference}
+\label{bet_8cpp}\index{/home/bergony/lp\+\_\+projeto\+\_\+keno/src/bet.\+cpp@{/home/bergony/lp\+\_\+projeto\+\_\+keno/src/bet.\+cpp}}
+{\ttfamily \#include \char`\"{}../include/bet.\+h\char`\"{}}\newline
+Include dependency graph for bet.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{bet_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{bet_8cpp_a2e84714d9bda277b7b7d49481189107c}{cmp} (const void $\ast$a, const void $\ast$b)
+\begin{DoxyCompactList}\small\item\em Compare two number e and giver if lower equal or lower. \end{DoxyCompactList}\item 
+void \hyperlink{bet_8cpp_ae136c90086a2fece05b983a3b7c69401}{Print} (int $\ast$first, int $\ast$last)
+\begin{DoxyCompactList}\small\item\em Printer a Vector \mbox{[}x , y) \end{DoxyCompactList}\item 
+void \hyperlink{bet_8cpp_a2043897413d3ae2277052a1ee9529c18}{Printer\+Line} (int a)
+\begin{DoxyCompactList}\small\item\em Pinter line. \end{DoxyCompactList}\item 
+void \hyperlink{bet_8cpp_aff9e197e7a490d959086fc089c806da7}{Printer\+Table} (void)
+\begin{DoxyCompactList}\small\item\em ! Printer Table Payout \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{bet_8cpp_a2e84714d9bda277b7b7d49481189107c}\label{bet_8cpp_a2e84714d9bda277b7b7d49481189107c}} 
+\index{bet.\+cpp@{bet.\+cpp}!cmp@{cmp}}
+\index{cmp@{cmp}!bet.\+cpp@{bet.\+cpp}}
+\subsubsection{\texorpdfstring{cmp()}{cmp()}}
+{\footnotesize\ttfamily int cmp (\begin{DoxyParamCaption}\item[{const void $\ast$}]{a,  }\item[{const void $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+
+Compare two number e and giver if lower equal or lower. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$a} & Number 1 . \\
+\hline
+{\em $\ast$b} & Number 2 . \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a $<$ b -\/1. 
+
+a = b 0. 
+
+a $>$ b 1. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+4 \{
+5     \textcolor{keyword}{const} \textcolor{keywordtype}{int} *cast\_a = (\textcolor{keyword}{const} \textcolor{keywordtype}{int} *)a;
+6     \textcolor{keyword}{const} \textcolor{keywordtype}{int} *cast\_b = (\textcolor{keyword}{const} \textcolor{keywordtype}{int} *)b;
+7 
+8     \textcolor{keywordflow}{if}(*(cast\_a) < *(cast\_b)) 
+9         \textcolor{keywordflow}{return} -1;
+10     \textcolor{keywordflow}{if}(*(cast\_a) == *(cast\_b)) 
+11         \textcolor{keywordflow}{return} 0;
+12     \textcolor{keywordflow}{return} 1;
+13 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{bet_8cpp_a2e84714d9bda277b7b7d49481189107c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{bet_8cpp_ae136c90086a2fece05b983a3b7c69401}\label{bet_8cpp_ae136c90086a2fece05b983a3b7c69401}} 
+\index{bet.\+cpp@{bet.\+cpp}!Print@{Print}}
+\index{Print@{Print}!bet.\+cpp@{bet.\+cpp}}
+\subsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void Print (\begin{DoxyParamCaption}\item[{int $\ast$}]{first,  }\item[{int $\ast$}]{last }\end{DoxyParamCaption})}
+
+
+
+Printer a Vector \mbox{[}x , y) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$first} & begin of vector . \\
+\hline
+{\em $\ast$last} & end of vector . \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+15 \{
+16     \textcolor{keyword}{auto} index\{0\};
+17     std::cout << \textcolor{stringliteral}{"[ "};
+18     \textcolor{keywordflow}{while}( (first+index) != last )
+19     \{
+20         std::cout << *(first+index) << \textcolor{stringliteral}{" "};
+21         index++;
+22     \}
+23     std::cout << \textcolor{stringliteral}{"]"};
+24 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{bet_8cpp_ae136c90086a2fece05b983a3b7c69401_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{bet_8cpp_a2043897413d3ae2277052a1ee9529c18}\label{bet_8cpp_a2043897413d3ae2277052a1ee9529c18}} 
+\index{bet.\+cpp@{bet.\+cpp}!Printer\+Line@{Printer\+Line}}
+\index{Printer\+Line@{Printer\+Line}!bet.\+cpp@{bet.\+cpp}}
+\subsubsection{\texorpdfstring{Printer\+Line()}{PrinterLine()}}
+{\footnotesize\ttfamily void Printer\+Line (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})}
+
+
+
+Pinter line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Number of Dash \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+26 \{
+27     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i\{0\}; i < a; i++)
+28         std::cout << \textcolor{stringliteral}{"-"};
+29 
+30 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{bet_8cpp_a2043897413d3ae2277052a1ee9529c18_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{bet_8cpp_aff9e197e7a490d959086fc089c806da7}\label{bet_8cpp_aff9e197e7a490d959086fc089c806da7}} 
+\index{bet.\+cpp@{bet.\+cpp}!Printer\+Table@{Printer\+Table}}
+\index{Printer\+Table@{Printer\+Table}!bet.\+cpp@{bet.\+cpp}}
+\subsubsection{\texorpdfstring{Printer\+Table()}{PrinterTable()}}
+{\footnotesize\ttfamily void Printer\+Table (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+! Printer Table Payout 
+
+
+\begin{DoxyCode}
+32 \{
+33     std::system(\textcolor{stringliteral}{"clear"});
+34     std::cout << std::setw(60) << \textcolor{stringliteral}{"hit"} << std::setw(60) << \textcolor{stringliteral}{"\(\backslash\)n"};
+35     std::cout << std::setw(15);
+36     \hyperlink{bet_8cpp_a2043897413d3ae2277052a1ee9529c18}{PrinterLine}(88);
+37     std::cout << \textcolor{stringliteral}{"\(\backslash\)n"};
+38     std::cout << \textcolor{stringliteral}{" # spots bet  "};
+39     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i\{0\}; i <= 15; i++)
+40     \{
+41         std::cout << \textcolor{stringliteral}{" "} << i << std::setw(4);
+42     \}
+43     std::cout << \textcolor{stringliteral}{"\(\backslash\)n"};
+44     \hyperlink{bet_8cpp_a2043897413d3ae2277052a1ee9529c18}{PrinterLine}(102);
+45     std::cout << \textcolor{stringliteral}{"\(\backslash\)n"};
+46     std::cout << std::setw(6) << \textcolor{stringliteral}{"1"} << std::setw(10) << \textcolor{stringliteral}{"0"} << std::setw(5) << \textcolor{stringliteral}{"3"} << std::setw(5)
+47         << \textcolor{stringliteral}{"\(\backslash\)n"};
+48     std::cout << std::setw(6) << \textcolor{stringliteral}{"2"} << std::setw(10) << \textcolor{stringliteral}{"0"} << std::setw(5) << \textcolor{stringliteral}{"1"} << std::setw(5)
+49         << \textcolor{stringliteral}{"9"} << std::setw(5) << \textcolor{stringliteral}{"\(\backslash\)n"};
+50     std::cout << std::setw(6) << \textcolor{stringliteral}{"3"} << std::setw(10) << \textcolor{stringliteral}{"0"} << std::setw(5) << \textcolor{stringliteral}{"1"} << std::setw(5)
+51         << \textcolor{stringliteral}{"2"} << std::setw(6) << \textcolor{stringliteral}{"16"} << std::setw(5) << \textcolor{stringliteral}{"\(\backslash\)n"};
+52     std::cout << std::setw(6) << \textcolor{stringliteral}{"4"} << std::setw(10) << \textcolor{stringliteral}{"0"} << std::setw(6) << \textcolor{stringliteral}{"0.5"} << std::setw(4)
+53         << \textcolor{stringliteral}{"2"} << std::setw(5) << \textcolor{stringliteral}{"6"} << std::setw(6) << \textcolor{stringliteral}{"12"} << std::setw(5)
+54         << \textcolor{stringliteral}{"\(\backslash\)n"};
+55     std::cout << std::setw(6) << \textcolor{stringliteral}{"5"} << std::setw(10)<< \textcolor{stringliteral}{"0"} << std::setw(6) << \textcolor{stringliteral}{"0.5"} << std::setw(4)
+56         << \textcolor{stringliteral}{"1"} << std::setw(5) << \textcolor{stringliteral}{"3"} << std::setw(6) << \textcolor{stringliteral}{"15"} << std::setw(5)
+57         << \textcolor{stringliteral}{"50"} << std::setw(5) << \textcolor{stringliteral}{"\(\backslash\)n"};
+58     std::cout << std::setw(6) << \textcolor{stringliteral}{"6"} <<  std::setw(10)<< \textcolor{stringliteral}{"0"} << std::setw(6) << \textcolor{stringliteral}{"0.5"} << std::setw(4)
+59         << \textcolor{stringliteral}{"1"} << std::setw(5) << \textcolor{stringliteral}{"2"} << std::setw(5) << \textcolor{stringliteral}{"3"} << std::setw(6)
+60         << \textcolor{stringliteral}{"30"} << std::setw(5) <<  \textcolor{stringliteral}{"75"} << std::setw(5) << \textcolor{stringliteral}{"\(\backslash\)n"};
+61     std::cout << std::setw(6) << \textcolor{stringliteral}{"7"} <<  std::setw(10)<< \textcolor{stringliteral}{"0"} << std::setw(6) << \textcolor{stringliteral}{"0.5"} << std::setw(5)
+62         << \textcolor{stringliteral}{"0.5"} << std::setw(4) << \textcolor{stringliteral}{"1"} << std::setw(5) << \textcolor{stringliteral}{"6"} << std::setw(6)
+63         << \textcolor{stringliteral}{"12"} << std::setw(5) <<  \textcolor{stringliteral}{"36"} << std::setw(5) << \textcolor{stringliteral}{"100"} << std::setw(5)
+64         << \textcolor{stringliteral}{"\(\backslash\)n"};
+65     std::cout << std::setw(6) << \textcolor{stringliteral}{"8"} <<  std::setw(10)<< \textcolor{stringliteral}{"0"} << std::setw(6) << \textcolor{stringliteral}{"0.5"} << std::setw(5)
+66         << \textcolor{stringliteral}{"0.5"} << std::setw(4) << \textcolor{stringliteral}{"1"} << std::setw(5) << \textcolor{stringliteral}{"3"} << std::setw(5)
+67         << \textcolor{stringliteral}{"6"} << std::setw(6) << \textcolor{stringliteral}{"19"} << std::setw(4) << \textcolor{stringliteral}{"90"} << std::setw(6)
+68         << \textcolor{stringliteral}{"720"} << std::setw(5) << \textcolor{stringliteral}{"\(\backslash\)n"};
+69     std::cout << std::setw(6) << \textcolor{stringliteral}{"9"} <<  std::setw(10)<< \textcolor{stringliteral}{"0"} << std::setw(6) << \textcolor{stringliteral}{"0.5"} << std::setw(5)
+70         << \textcolor{stringliteral}{"0.5"} << std::setw(4) << \textcolor{stringliteral}{"1"} << std::setw(5) << \textcolor{stringliteral}{"2"} << std::setw(5)
+71         << \textcolor{stringliteral}{"4"} << std::setw(5) << \textcolor{stringliteral}{"8"} << std::setw(5) << \textcolor{stringliteral}{"20"} << std::setw(5)
+72         << \textcolor{stringliteral}{"80"} << std::setw(7) << \textcolor{stringliteral}{"1200"} << std::setw(5) << \textcolor{stringliteral}{"\(\backslash\)n"};
+73     std::cout << std::setw(7) << \textcolor{stringliteral}{"10"} <<  std::setw(9)<< \textcolor{stringliteral}{"0"} << std::setw(5) << \textcolor{stringliteral}{"0"} << std::setw(6)
+74         << \textcolor{stringliteral}{"0.5"} << std::setw(4) << \textcolor{stringliteral}{"1"} << std::setw(5) << \textcolor{stringliteral}{"2"} << std::setw(5)
+75         << \textcolor{stringliteral}{"3"} << std::setw(5) << \textcolor{stringliteral}{"5"} << std::setw(5) << \textcolor{stringliteral}{"10"} << std::setw(5)
+76         << \textcolor{stringliteral}{"30"} << std::setw(6) << \textcolor{stringliteral}{"600"} << std::setw(7) << \textcolor{stringliteral}{"1800"} << std::setw(5)
+77         << \textcolor{stringliteral}{"\(\backslash\)n"};
+78     std::cout << std::setw(7) << \textcolor{stringliteral}{"11"} <<  std::setw(9)<< \textcolor{stringliteral}{"0"} << std::setw(5) << \textcolor{stringliteral}{"0"} << std::setw(6)
+79         << \textcolor{stringliteral}{"0.5"} << std::setw(4) << \textcolor{stringliteral}{"1"} << std::setw(5) << \textcolor{stringliteral}{"1"} << std::setw(5)
+80         << \textcolor{stringliteral}{"2"} << std::setw(5) << \textcolor{stringliteral}{"6"} << std::setw(5) << \textcolor{stringliteral}{"15"} << std::setw(5)
+81         << \textcolor{stringliteral}{"25"} << std::setw(6) << \textcolor{stringliteral}{"180"} << std::setw(7) << \textcolor{stringliteral}{"1000"} << std::setw(6)
+82         << \textcolor{stringliteral}{"3000"} << std::setw(5) <<\textcolor{stringliteral}{"\(\backslash\)n"};
+83     std::cout << std::setw(7) << \textcolor{stringliteral}{"12"} <<  std::setw(9)<< \textcolor{stringliteral}{"0"} << std::setw(5) << \textcolor{stringliteral}{"0"} << std::setw(5)
+84         << \textcolor{stringliteral}{"0"} << std::setw(6) << \textcolor{stringliteral}{"0.5"} << std::setw(4) << \textcolor{stringliteral}{"1"} << std::setw(5)
+85         << \textcolor{stringliteral}{"2"} << std::setw(5) << \textcolor{stringliteral}{"4"} << std::setw(5) << \textcolor{stringliteral}{"24"} << std::setw(5)
+86         << \textcolor{stringliteral}{"72"} << std::setw(6) << \textcolor{stringliteral}{"250"} << std::setw(6) << \textcolor{stringliteral}{"500"} << std::setw(7)
+87         << \textcolor{stringliteral}{"3000"} << std::setw(6) << \textcolor{stringliteral}{"6000"} << std::setw(5) << \textcolor{stringliteral}{"\(\backslash\)n"};
+88     std::cout << std::setw(7) << \textcolor{stringliteral}{"13"} <<  std::setw(9)<< \textcolor{stringliteral}{"0"} << std::setw(5) << \textcolor{stringliteral}{"0"} << std::setw(5)
+89         << \textcolor{stringliteral}{"0"} << std::setw(6) << \textcolor{stringliteral}{"0.5"} << std::setw(5) << \textcolor{stringliteral}{"0.5"} << std::setw(4)
+90         << \textcolor{stringliteral}{"3"} << std::setw(5) << \textcolor{stringliteral}{"4"} << std::setw(4) << \textcolor{stringliteral}{"5"} << std::setw(6)
+91         << \textcolor{stringliteral}{"20"} << std::setw(5) << \textcolor{stringliteral}{"80"} << std::setw(7) << \textcolor{stringliteral}{"240"} << std::setw(6)
+92         << \textcolor{stringliteral}{"500"} << std::setw(7) << \textcolor{stringliteral}{"3000"} << std::setw(6) << \textcolor{stringliteral}{"6000"} << std::setw(5)
+93         << \textcolor{stringliteral}{"\(\backslash\)n"};
+94     std::cout << std::setw(7) << \textcolor{stringliteral}{"14"} <<  std::setw(9)<< \textcolor{stringliteral}{"0"} << std::setw(5) << \textcolor{stringliteral}{"0"} << std::setw(5)
+95         << \textcolor{stringliteral}{"0"} << std::setw(6) << \textcolor{stringliteral}{"0.5"} << std::setw(5) << \textcolor{stringliteral}{"0.5"} << std::setw(4)
+96         << \textcolor{stringliteral}{"2"} << std::setw(5) << \textcolor{stringliteral}{"3"} << std::setw(4) << \textcolor{stringliteral}{"5"} << std::setw(6)
+97         << \textcolor{stringliteral}{"12"} << std::setw(5) << \textcolor{stringliteral}{"50"} << std::setw(7) << \textcolor{stringliteral}{"150"} << std::setw(6)
+98         << \textcolor{stringliteral}{"500"} << std::setw(7) << \textcolor{stringliteral}{"1000"} << std::setw(6) << \textcolor{stringliteral}{"2000"} << std::setw(6)
+99         << \textcolor{stringliteral}{"7500"} << std::setw(5) << \textcolor{stringliteral}{"\(\backslash\)n"};
+100     std::cout << std::setw(7) << \textcolor{stringliteral}{"15"} <<  std::setw(9)<< \textcolor{stringliteral}{"0"} << std::setw(5) << \textcolor{stringliteral}{"0"} << std::setw(5)
+101         << \textcolor{stringliteral}{"0"} << std::setw(6) << \textcolor{stringliteral}{"0.5"} << std::setw(5) << \textcolor{stringliteral}{"0.5"} << std::setw(4)
+102         << \textcolor{stringliteral}{"1"} << std::setw(5) << \textcolor{stringliteral}{"2"} << std::setw(4) << \textcolor{stringliteral}{"5"} << std::setw(6)
+103         << \textcolor{stringliteral}{"15"} << std::setw(5) << \textcolor{stringliteral}{"50"} << std::setw(7) << \textcolor{stringliteral}{"150"} << std::setw(6)
+104         << \textcolor{stringliteral}{"300"} << std::setw(6) << \textcolor{stringliteral}{"600"} << std::setw(7) << \textcolor{stringliteral}{"1200"} << std::setw(6)
+105         << \textcolor{stringliteral}{"2500"} << std::setw(7) << \textcolor{stringliteral}{"10000"} << std::setw(5) <<\textcolor{stringliteral}{"\(\backslash\)n"};
+106 
+107     \hyperlink{bet_8cpp_a2043897413d3ae2277052a1ee9529c18}{PrinterLine}(102);
+108     std::cout << \textcolor{stringliteral}{"\(\backslash\)n"};
+109 \}
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{bet_8cpp_aff9e197e7a490d959086fc089c806da7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{bet_8cpp_aff9e197e7a490d959086fc089c806da7_icgraph}
+\end{center}
+\end{figure}

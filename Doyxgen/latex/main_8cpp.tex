@@ -1,0 +1,272 @@
+\hypertarget{main_8cpp}{}\section{/home/bergony/lp\+\_\+projeto\+\_\+keno/src/main.cpp File Reference}
+\label{main_8cpp}\index{/home/bergony/lp\+\_\+projeto\+\_\+keno/src/main.\+cpp@{/home/bergony/lp\+\_\+projeto\+\_\+keno/src/main.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}../include/bet.\+h\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+This is a \hyperlink{main_8cpp}{main.\+cpp} file here will be
+
+place the bet and full game.
+
+\begin{DoxyAuthor}{Author}
+Bergony Bandeira
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+12/10/2018
+\end{DoxyDate}
+
+\begin{DoxyCode}
+54 \{
+55 
+57 
+66     std::string word;                    \textcolor{comment}{// Word Save string in betfile to be convert.}
+67     \textcolor{keywordtype}{char} *bet\_file;                      \textcolor{comment}{// string to save argv[1]}
+68     bet\_file = argv[1];
+69     std::string::size\_type size\_string;  \textcolor{comment}{// String size}
+70     \hyperlink{classKenoBet}{KenoBet} bet;                         \textcolor{comment}{// creates bet objet}
+71     \textcolor{keywordtype}{int} endGame\{1\};                      \textcolor{comment}{// Endgame if != 1}
+72     \textcolor{keywordtype}{float} *you\_bet;                      \textcolor{comment}{// Arry to save your reward table  bet\_spot\_n}
+73 
+74     \textcolor{keywordtype}{float} spot\_bet\_1[2] =   \{0,   3\};
+75     \textcolor{keywordtype}{float} spot\_bet\_2[3] =   \{0,   1,   9\};
+76     \textcolor{keywordtype}{float} spot\_bet\_3[4] =   \{0,   1,   2,  16\};
+77     \textcolor{keywordtype}{float} spot\_bet\_4[5] =   \{0, 0.5,   2,   6,  12\};
+78     \textcolor{keywordtype}{float} spot\_bet\_5[6] =   \{0, 0.5,   1,   3,  15, 50\};
+79     \textcolor{keywordtype}{float} spot\_bet\_6[7] =   \{0, 0.5,   1,   2,   3, 30, 75\};
+80     \textcolor{keywordtype}{float} spot\_bet\_7[8] =   \{0, 0.5, 0.5,   1,   6, 12, 36, 100\};
+81     \textcolor{keywordtype}{float} spot\_bet\_8[9] =   \{0, 0.5, 0.5,   1,   3,  6, 19,  90, 720\};
+82     \textcolor{keywordtype}{float} spot\_bet\_9[10] =  \{0, 0.5, 0.5,   1,   2,  4,  8,  20,  80, 1200\};
+83     \textcolor{keywordtype}{float} spot\_bet\_10[11] = \{0,   0, 0.5,   1,   2,  3,  5,  10,  30,  600, 1800\};
+84     \textcolor{keywordtype}{float} spot\_bet\_11[12] = \{0,   0, 0.5,   1,   1,  2,  6,  15,  25,  180, 1000, 3000\};
+85     \textcolor{keywordtype}{float} spot\_bet\_12[13] = \{0,   0,   0, 0.5,   1,  2,  4,  24,  72,  250,  500, 2000, 4000\};
+86     \textcolor{keywordtype}{float} spot\_bet\_13[14] = \{0,   0,   0, 0.5, 0.5,  3,  4,   5,  20,   80,  240,  500, 3000, 6000\};
+87     \textcolor{keywordtype}{float} spot\_bet\_14[15] = \{0,   0,   0, 0.5, 0.5,  2,  3,   5,  12,   50,  150,  500, 1000, 2000, 7500\};
+88     \textcolor{keywordtype}{float} spot\_bet\_15[16] = \{0,   0,   0, 0.5, 0.5,  1,  2,   5,  15,   50,  150,  300,  600, 1200, 2500, 
+      10000\};
+89     \textcolor{keywordflow}{while}(endGame == 1)
+90     \{
+91         std::ifstream fin( bet\_file );                          \textcolor{comment}{//Stream opem in fin}
+92 
+93         \textcolor{keywordflow}{if} (fin.is\_open())                                      \textcolor{comment}{//if the file is opem}
+94         \{
+95             getline (fin,word);                                 \textcolor{comment}{//Take the first line}
+96             bet.\hyperlink{classKenoBet_a7b74641d226e6b2ea45bc60889f32781}{set\_IC}( std::stof(word, &size\_string));         \textcolor{comment}{//Set initial cash and convert string
+       to float}
+97             getline (fin,word);                                 \textcolor{comment}{//Take the second line }
+98             bet.\hyperlink{classKenoBet_a63780c5d19157760a2760407cd68149f}{set\_NR}( std::stoi(word, &size\_string) );        \textcolor{comment}{//set Number of rounds convert string
+       to int}
+99             bet.\hyperlink{classKenoBet_abd6b6b0b0ed9c3d030a71673dc89f39a}{set\_TSC}( bet.\hyperlink{classKenoBet_aace00d82c42c9870a4f3b95c7ec79f24}{get\_IC}() );
+100             \textcolor{keywordflow}{if}(bet.\hyperlink{classKenoBet_aa6f65b35514270c2707e60b9dea23ae9}{size}() > 15) 
+101                 bet.\hyperlink{classKenoBet_a63780c5d19157760a2760407cd68149f}{set\_NR}(15);
+102             \hyperlink{bet_8h_aff9e197e7a490d959086fc089c806da7}{PrinterTable}();
+103             std::cout << \textcolor{stringliteral}{">>> Preparing to read bet file ["} << argv[1] << \textcolor{stringliteral}{"], please wait...\(\backslash\)n"};
+104             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i\{0\}; i < (int)bet.\hyperlink{classKenoBet_aa6f65b35514270c2707e60b9dea23ae9}{size}();i++ )
+105             \{
+106                 std::getline (fin,word, fin.widen(\textcolor{charliteral}{' '}));                        \textcolor{comment}{//Take the third line up
+       until find an blank space.                                            }
+107                 \textcolor{keywordflow}{if}(bet.\hyperlink{classKenoBet_aba848a50d30a0155459eb9f5cbb91966}{add\_number}( std::stoi(word, &size\_string) ) == \textcolor{keyword}{false})
+108                 \{
+109                     std::cout << \textcolor{stringliteral}{"The number is Repeat or the Number of"}
+110                               << \textcolor{stringliteral}{"round is high the number of spots"};
+111                     \textcolor{keywordflow}{return} -1;
+112                 \}
+113             \}
+114             fin.close();                                        \textcolor{comment}{//Strem close in fin}
+115         \}\textcolor{keywordflow}{else}
+116         \{
+117             std::cerr << \textcolor{stringliteral}{"File is not opem"};
+118             \textcolor{keywordflow}{return} -1;
+119         \}
+120 
+121         \textcolor{keywordflow}{if}( bet.\hyperlink{classKenoBet_a2b21e387cde33818230d9895845b2d9a}{set\_wage}( bet.\hyperlink{classKenoBet_aace00d82c42c9870a4f3b95c7ec79f24}{get\_IC}() ) )                                      \textcolor{comment}{//If wage < 0}
+122         \{
+123             std::cerr << \textcolor{stringliteral}{">>> The Wage initial lower then 0\(\backslash\)n"};
+124             \textcolor{keywordflow}{return} -1;
+125         \}
+126         \textcolor{keywordflow}{if}( bet.\hyperlink{classKenoBet_aa6f65b35514270c2707e60b9dea23ae9}{size}() < 0)                                                     \textcolor{comment}{//Number rounds < 0}
+127         \{
+128 
+129             std::cerr << \textcolor{stringliteral}{">>> The Number Round is lower then 0\(\backslash\)n"};
+130             \textcolor{keywordflow}{return} -1;
+131         \}
+132         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i\{0\}; i < (int)bet.\hyperlink{classKenoBet_aa6f65b35514270c2707e60b9dea23ae9}{size}(); i++)
+133         \{
+134             \textcolor{keywordflow}{if}(bet[i] > 80 || bet[i] < 1)                                       \textcolor{comment}{//if the spots range (0 80]
+        }
+135             \{
+136                 std::cerr << \textcolor{stringliteral}{"The number is above the 80 or lower then 1\(\backslash\)n"};
+137                 \textcolor{keywordflow}{return} -1;
+138             \}
+139         \}
+140         bet.\hyperlink{classKenoBet_a4865fd866acc1500bde749d8d15ddf16}{set\_SC}( bet.\hyperlink{classKenoBet_aace00d82c42c9870a4f3b95c7ec79f24}{get\_IC}()/bet.\hyperlink{classKenoBet_aa6f65b35514270c2707e60b9dea23ae9}{size}());                                              
+               \textcolor{comment}{//Set spend cash per round}
+141         \hyperlink{bet_8h_a2043897413d3ae2277052a1ee9529c18}{PrinterLine}(58);
+142 
+143         std::cout << \textcolor{stringliteral}{"\(\backslash\)n>>> Bet successfully read!\(\backslash\)n"};
+144         std::cout << \textcolor{stringliteral}{"You are going to wage a total of $"} << bet.\hyperlink{classKenoBet_aace00d82c42c9870a4f3b95c7ec79f24}{get\_IC}() << \textcolor{stringliteral}{" Dollars.\(\backslash\)n"};
+145         std::cout << \textcolor{stringliteral}{"Going for a total of "} << bet.\hyperlink{classKenoBet_aa6f65b35514270c2707e60b9dea23ae9}{size}() << \textcolor{stringliteral}{" rounds, waging $"}
+146             << bet.\hyperlink{classKenoBet_a0c2ee88fc2f8e7afc5b0399fe74c022b}{get\_SC}() << \textcolor{stringliteral}{" per round.\(\backslash\)n"};
+147 
+148         you\_bet = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[bet.\hyperlink{classKenoBet_aa6f65b35514270c2707e60b9dea23ae9}{size}()];                                                            \textcolor{comment}{//
+      Alloc bet.size to arry reward}
+149 
+150         \textcolor{keywordflow}{switch} ( bet.\hyperlink{classKenoBet_aa6f65b35514270c2707e60b9dea23ae9}{size}())                                                                        \textcolor{comment}{//
+      set reward = number rounds}
+151         \{
+152             \textcolor{keywordflow}{case} 1 :
+153                 you\_bet = spot\_bet\_1;
+154                 \textcolor{keywordflow}{break};
+155             \textcolor{keywordflow}{case} 2 :
+156                 you\_bet = spot\_bet\_2;
+157                 \textcolor{keywordflow}{break};
+158             \textcolor{keywordflow}{case} 3 :
+159                 you\_bet = spot\_bet\_3;
+160                 \textcolor{keywordflow}{break};
+161             \textcolor{keywordflow}{case} 4 :
+162                 you\_bet = spot\_bet\_4;
+163                 \textcolor{keywordflow}{break};
+164             \textcolor{keywordflow}{case} 5 :
+165                 you\_bet = spot\_bet\_5;
+166                 \textcolor{keywordflow}{break};
+167             \textcolor{keywordflow}{case} 6 :
+168                 you\_bet = spot\_bet\_6;
+169                 \textcolor{keywordflow}{break};
+170             \textcolor{keywordflow}{case} 7 :
+171                 you\_bet = spot\_bet\_7;
+172                 \textcolor{keywordflow}{break};
+173             \textcolor{keywordflow}{case} 8 :
+174                 you\_bet = spot\_bet\_8;
+175                 \textcolor{keywordflow}{break};
+176             \textcolor{keywordflow}{case} 9 :
+177                 you\_bet = spot\_bet\_9;
+178                 \textcolor{keywordflow}{break};
+179             \textcolor{keywordflow}{case} 10 :
+180                 you\_bet = spot\_bet\_10;
+181                 \textcolor{keywordflow}{break};
+182             \textcolor{keywordflow}{case} 11 :
+183                 you\_bet = spot\_bet\_11;
+184                 \textcolor{keywordflow}{break};
+185             \textcolor{keywordflow}{case} 12 :
+186                 you\_bet = spot\_bet\_12;
+187                 \textcolor{keywordflow}{break};
+188             \textcolor{keywordflow}{case} 13 :
+189                 you\_bet = spot\_bet\_13;
+190                 \textcolor{keywordflow}{break};
+191             \textcolor{keywordflow}{case} 14 :
+192                 you\_bet = spot\_bet\_14;
+193                 \textcolor{keywordflow}{break};
+194             default :
+195                 you\_bet = spot\_bet\_15;
+196         \}
+197 
+198         std::cout << \textcolor{stringliteral}{"\(\backslash\)nYour bet has "} << bet.\hyperlink{classKenoBet_aa6f65b35514270c2707e60b9dea23ae9}{size}() << \textcolor{stringliteral}{" numbers. They are: "};
+199         \hyperlink{bet_8h_ae136c90086a2fece05b983a3b7c69401}{Print}(  bet.\hyperlink{classKenoBet_a386ab5f7108fd2df3518f37bfca2b2ef}{get\_m\_spots}() ,  bet.\hyperlink{classKenoBet_a386ab5f7108fd2df3518f37bfca2b2ef}{get\_m\_spots}()+bet.
+      \hyperlink{classKenoBet_aa6f65b35514270c2707e60b9dea23ae9}{size}());
+200         std::cout << \textcolor{stringliteral}{"\(\backslash\)n     -------+----------\(\backslash\)n     Hits   | Payout  \(\backslash\)n     -------+----------\(\backslash\)n"} ;
+201         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i\{0\}; i <= (int)bet.\hyperlink{classKenoBet_aa6f65b35514270c2707e60b9dea23ae9}{size}(); i++)
+202         \{
+203             std::cout  << \textcolor{stringliteral}{"     "} << i << \textcolor{stringliteral}{"      |"} << *(you\_bet+i) << \textcolor{stringliteral}{"\(\backslash\)n"};
+204         \}
+205         std::cout << \textcolor{stringliteral}{"     "};
+206         \hyperlink{bet_8h_a2043897413d3ae2277052a1ee9529c18}{PrinterLine}(50);
+207         std::cout << \textcolor{stringliteral}{"\(\backslash\)n"};
+208         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i\{0\}; i < (int)bet.\hyperlink{classKenoBet_aa6f65b35514270c2707e60b9dea23ae9}{size}(); i++)
+209         \{
+210             bet.\hyperlink{classKenoBet_a7b74641d226e6b2ea45bc60889f32781}{set\_IC}(bet.\hyperlink{classKenoBet_aace00d82c42c9870a4f3b95c7ec79f24}{get\_IC}() - bet.\hyperlink{classKenoBet_a0c2ee88fc2f8e7afc5b0399fe74c022b}{get\_SC}() );                                    
+         \textcolor{comment}{//Pay the bet }
+211             std::cout << \textcolor{stringliteral}{"     This is round #"} << i+1 << \textcolor{stringliteral}{" of "} << bet.\hyperlink{classKenoBet_aa6f65b35514270c2707e60b9dea23ae9}{size}()
+212                 << \textcolor{stringliteral}{", and your wage is $"} << bet.\hyperlink{classKenoBet_a0c2ee88fc2f8e7afc5b0399fe74c022b}{get\_SC}() << \textcolor{stringliteral}{". Good luck!\(\backslash\)n"};
+213             bet.\hyperlink{classKenoBet_a612b57c35203a41682269cdfbb31c2b1}{get\_hits}( bet.\hyperlink{classKenoBet_a382454c66974466900d168c398699483}{get\_spots}() );
+214             qsort( bet.\hyperlink{classKenoBet_a8106aa1f149ba3043a8219453e1af3a1}{get\_m\_spots\_rdn}(), 20, \textcolor{keyword}{sizeof}(int), \hyperlink{bet_8h_a2e84714d9bda277b7b7d49481189107c}{cmp});
+215             std::cout << \textcolor{stringliteral}{"     The hits are: "};
+216             \hyperlink{bet_8h_ae136c90086a2fece05b983a3b7c69401}{Print}( bet.\hyperlink{classKenoBet_a8106aa1f149ba3043a8219453e1af3a1}{get\_m\_spots\_rdn}() , bet.
+      \hyperlink{classKenoBet_a8106aa1f149ba3043a8219453e1af3a1}{get\_m\_spots\_rdn}()+20);
+217             std::cout << \textcolor{stringliteral}{"\(\backslash\)n"};
+218 
+219             std::cout << \textcolor{stringliteral}{"\(\backslash\)n     You hit the following number(s) "};
+220             \hyperlink{bet_8h_ae136c90086a2fece05b983a3b7c69401}{Print}(  bet.\hyperlink{classKenoBet_a386ab5f7108fd2df3518f37bfca2b2ef}{get\_m\_spots}() ,  bet.\hyperlink{classKenoBet_a386ab5f7108fd2df3518f37bfca2b2ef}{get\_m\_spots}()+bet.
+      \hyperlink{classKenoBet_aa6f65b35514270c2707e60b9dea23ae9}{size}());
+221 
+222             \textcolor{keywordflow}{if}(bet.\hyperlink{classKenoBet_a79f26e472d9a60894e25094a37d06eb6}{get\_spot\_r}() > 0)                                                        \textcolor{comment}{//if
+       you get at last one spot}
+223                 bet.\hyperlink{classKenoBet_a7b74641d226e6b2ea45bc60889f32781}{set\_IC}( bet.\hyperlink{classKenoBet_aace00d82c42c9870a4f3b95c7ec79f24}{get\_IC}() + ( bet.\hyperlink{classKenoBet_a0c2ee88fc2f8e7afc5b0399fe74c022b}{get\_SC}() * you\_bet[bet.
+      \hyperlink{classKenoBet_a79f26e472d9a60894e25094a37d06eb6}{get\_spot\_r}()] ));
+224 
+225             std::cout << \textcolor{stringliteral}{", a total of "} << bet.\hyperlink{classKenoBet_a79f26e472d9a60894e25094a37d06eb6}{get\_spot\_r}() << \textcolor{stringliteral}{" hits out of "} 
+226                 << bet.\hyperlink{classKenoBet_aa6f65b35514270c2707e60b9dea23ae9}{size}() <<\textcolor{stringliteral}{"\(\backslash\)n"} << \textcolor{stringliteral}{"     Payout rate is "} << you\_bet[bet.
+      \hyperlink{classKenoBet_a79f26e472d9a60894e25094a37d06eb6}{get\_spot\_r}()] 
+227                 << \textcolor{stringliteral}{", thus you came out with: $"} << bet.\hyperlink{classKenoBet_a0c2ee88fc2f8e7afc5b0399fe74c022b}{get\_SC}()*you\_bet[bet.
+      \hyperlink{classKenoBet_a79f26e472d9a60894e25094a37d06eb6}{get\_spot\_r}()]
+228                 << \textcolor{stringliteral}{"\(\backslash\)n     Your net balance so far is: "} << bet.\hyperlink{classKenoBet_aace00d82c42c9870a4f3b95c7ec79f24}{get\_IC}() << \textcolor{stringliteral}{" Dollars.\(\backslash\)n     "};
+229             
+230             \hyperlink{bet_8h_a2043897413d3ae2277052a1ee9529c18}{PrinterLine}(50);
+231 
+232             bet.\hyperlink{classKenoBet_acc2afd4d502e44fdfbb122f3389bc633}{reset}();                                                                    \textcolor{comment}{//reset
+       Object Number rounds zero and vector.}
+233             std::cin.ignore();
+234         \}
+235         std::cout<< \textcolor{stringliteral}{">>> End of rounds!\(\backslash\)n"};
+236         \hyperlink{bet_8h_a2043897413d3ae2277052a1ee9529c18}{PrinterLine}(58);
+237         std::cout << \textcolor{stringliteral}{"\(\backslash\)n \(\backslash\)n===== SUMMARY =====\(\backslash\)n"}
+238             << \textcolor{stringliteral}{">>> You spent in this game a total of $"} << bet.\hyperlink{classKenoBet_a15782d60d2e9b76f359963865a714a04}{get\_TSC}() << \textcolor{stringliteral}{" dollars.\(\backslash\)n"};
+239         bet.\hyperlink{classKenoBet_aa9be1ef95a09fcc293e7c73e763ff176}{set\_TC}( bet.\hyperlink{classKenoBet_aace00d82c42c9870a4f3b95c7ec79f24}{get\_IC}() - bet.\hyperlink{classKenoBet_a15782d60d2e9b76f359963865a714a04}{get\_TSC}());                                      
+           \textcolor{comment}{//Total Cash}
+240         \textcolor{keywordflow}{if}(bet.\hyperlink{classKenoBet_ade294f6dcb57c7a55be5ce2303664b0a}{get\_TC}()  > 0)
+241         \{
+242             std::cout << \textcolor{stringliteral}{">>> Hooray, you won $"} << bet.\hyperlink{classKenoBet_ade294f6dcb57c7a55be5ce2303664b0a}{get\_TC}()
+243                       << \textcolor{stringliteral}{" dollars. See you next time! ᕕ( ᐛ )ᕗ"} << std::endl;
+244         \}
+245         \textcolor{keywordflow}{if}(bet.\hyperlink{classKenoBet_ade294f6dcb57c7a55be5ce2303664b0a}{get\_TC}() < 0)
+246         \{
+247             std::cout << \textcolor{stringliteral}{">>> Alack, you lost $"} << bet.\hyperlink{classKenoBet_ade294f6dcb57c7a55be5ce2303664b0a}{get\_TC}() 
+248                       << \textcolor{stringliteral}{" dollars. See you next time! (⌣̩̩́\_⌣̩̩̀)"} << std::endl;
+249         \}
+250         \textcolor{keywordflow}{if}(bet.\hyperlink{classKenoBet_ade294f6dcb57c7a55be5ce2303664b0a}{get\_TC}() == 0)
+251         \{
+252             std::cout << \textcolor{stringliteral}{">>> Whatever, you do not lost $"} << bet.\hyperlink{classKenoBet_ade294f6dcb57c7a55be5ce2303664b0a}{get\_TC}() 
+253                       << \textcolor{stringliteral}{" dollars. See you next time! ¯\(\backslash\)\(\backslash\)\_(ツ)\_/¯"} << std::endl;
+254         \}
+255         std::cout << \textcolor{stringliteral}{">>> You are leaving the Keno table with $"} << bet.\hyperlink{classKenoBet_aace00d82c42c9870a4f3b95c7ec79f24}{get\_IC}() << \textcolor{stringliteral}{" dollars.\(\backslash\)n"};
+256         std::cout << \textcolor{stringliteral}{">>> Play Again press 1: "};
+257         std::cin >> endGame;
+258         \textcolor{keywordflow}{if}(endGame != 1)
+259             \textcolor{keywordflow}{break};
+260         std::cout << \textcolor{stringliteral}{">>> Enter new data/betn.dat "};
+261         std::cin >> bet\_file;
+262     \}
+263     \textcolor{keywordflow}{return} 0;
+264 \}
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
+\end{center}
+\end{figure}

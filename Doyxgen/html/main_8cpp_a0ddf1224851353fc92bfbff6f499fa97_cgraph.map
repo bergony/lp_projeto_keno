@@ -1,0 +1,25 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$classKenoBet.html#a7b74641d226e6b2ea45bc60889f32781" title="!Set Inital Cash. " alt="" coords="135,5,253,32"/>
+<area shape="rect" id="node3" href="$classKenoBet.html#a63780c5d19157760a2760407cd68149f" title="!Set Numbers Rounds. " alt="" coords="131,56,257,83"/>
+<area shape="rect" id="node4" href="$classKenoBet.html#abd6b6b0b0ed9c3d030a71673dc89f39a" title="!set Total Spend Cash. " alt="" coords="128,107,260,133"/>
+<area shape="rect" id="node5" href="$classKenoBet.html#aace00d82c42c9870a4f3b95c7ec79f24" title="Get Inital Cash. " alt="" coords="135,157,253,184"/>
+<area shape="rect" id="node6" href="$classKenoBet.html#aa6f65b35514270c2707e60b9dea23ae9" title="Returns to the current number of spots in the player ’s bet. " alt="" coords="142,208,246,235"/>
+<area shape="rect" id="node7" href="$bet_8h.html#aff9e197e7a490d959086fc089c806da7" title="! Printer Table Payout " alt="" coords="148,259,240,285"/>
+<area shape="rect" id="node9" href="$classKenoBet.html#aba848a50d30a0155459eb9f5cbb91966" title="Adds a number to the spots only if the number is not already there. " alt="" coords="119,309,269,336"/>
+<area shape="rect" id="node10" href="$classKenoBet.html#a2b21e387cde33818230d9895845b2d9a" title="Sets the amount of money the player is betting. " alt="" coords="126,360,262,387"/>
+<area shape="rect" id="node11" href="$classKenoBet.html#a4865fd866acc1500bde749d8d15ddf16" title="!Set Spend Cash per round. " alt="" coords="132,411,256,437"/>
+<area shape="rect" id="node12" href="$bet_8h.html#a2043897413d3ae2277052a1ee9529c18" title="Pinter line. " alt="" coords="152,461,236,488"/>
+<area shape="rect" id="node13" href="$classKenoBet.html#a0c2ee88fc2f8e7afc5b0399fe74c022b" title="Get Spend Cash per Round. " alt="" coords="132,512,256,539"/>
+<area shape="rect" id="node14" href="$bet_8h.html#ae136c90086a2fece05b983a3b7c69401" title="Printer a Vector [x , y) " alt="" coords="169,563,219,589"/>
+<area shape="rect" id="node15" href="$classKenoBet.html#a386ab5f7108fd2df3518f37bfca2b2ef" title="Get Pointer of begin vector(spots) " alt="" coords="117,613,271,640"/>
+<area shape="rect" id="node16" href="$classKenoBet.html#a612b57c35203a41682269cdfbb31c2b1" title="Determine how many spots match the hits passed as argument . " alt="" coords="131,664,257,691"/>
+<area shape="rect" id="node17" href="$classKenoBet.html#a382454c66974466900d168c398699483" title="Return a vector &lt; spot_type &gt; with the spots the player has picked so far. " alt="" coords="125,715,263,741"/>
+<area shape="rect" id="node18" href="$classKenoBet.html#a8106aa1f149ba3043a8219453e1af3a1" title="Get Pointer of begin vector(spots_rdn) " alt="" coords="104,765,284,792"/>
+<area shape="rect" id="node19" href="$bet_8h.html#a2e84714d9bda277b7b7d49481189107c" title="Compare two number e and giver if lower equal or lower. " alt="" coords="171,816,217,843"/>
+<area shape="rect" id="node20" href="$classKenoBet.html#a79f26e472d9a60894e25094a37d06eb6" title="Get Valor of Hits Right. " alt="" coords="123,867,265,893"/>
+<area shape="rect" id="node21" href="$classKenoBet.html#acc2afd4d502e44fdfbb122f3389bc633" title="! Resets a bet to an empty state. " alt="" coords="139,917,249,944"/>
+<area shape="rect" id="node22" href="$classKenoBet.html#a15782d60d2e9b76f359963865a714a04" title="Get Total Inital Cash. " alt="" coords="128,968,260,995"/>
+<area shape="rect" id="node23" href="$classKenoBet.html#aa9be1ef95a09fcc293e7c73e763ff176" title="!Set Total Cash " alt="" coords="133,1019,255,1045"/>
+<area shape="rect" id="node24" href="$classKenoBet.html#ade294f6dcb57c7a55be5ce2303664b0a" title="Get Total Cash. " alt="" coords="133,1069,255,1096"/>
+<area shape="rect" id="node8" href="$bet_8cpp.html#a2043897413d3ae2277052a1ee9529c18" title="Pinter line. " alt="" coords="332,259,416,285"/>
+</map>
